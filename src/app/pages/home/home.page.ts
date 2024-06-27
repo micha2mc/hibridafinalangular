@@ -4,10 +4,10 @@ import { ModalPage } from '../modal/modal.page';
 
 @Component({
   selector: 'app-products',
-  templateUrl: './products.page.html',
-  styleUrls: ['./products.page.scss'],
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
 })
-export class ProductsPage implements OnInit {
+export class HomePage implements OnInit {
 
   propinaSeleccionada: any;
   numeroComensales: any;

@@ -1,4 +1,4 @@
-ion-grid{
+ion-grid {
     --ion-grid-padding-sm: 30px;
     --ion-grid-padding-md: 30px;
     --ion-grid-padding-lg: 100px;
@@ -7,5 +7,18 @@ ion-grid{
 
 ion-title {
     --color: #95fc91;
-  }
-  
+    font-family: "Brush Script MT", cursive;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.ion-text-center {
+
+    font-family: "Brush Script MT", cursive;
+}
+
+ion-input, ion-select, ion-range{
+    font-family: "Brush Script MT", cursive;
+}

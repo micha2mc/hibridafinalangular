@@ -1,0 +1,68 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      PropApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="ion-text-center">
+          <h1>PropApp</h1>
+          PropApp, aplicación que facilita los cálculos de lo
+que debería pagar cada comensal tras aplicar la propina correspondiente.
+        </div>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-card sizeXs="12" sizeSm="6" sizeMd="6" sizeLg="4" sizeXl="4">
+      <ion-card-content>
+        <ion-item>
+          <ion-input type="number" label="Importe Total:" [(ngModel)]="importeTotal" placeholder="Introduce importe total como 25.23"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input label="Nº Comensales:" type="number" [(ngModel)]="numeroComensales" placeholder="Nº comensales"></ion-input>
+
+        </ion-item>
+
+
+
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-select [(ngModel)]="propinaSeleccionada" label="Seleccionar propina" placeholder="Seleccinando propina"
+                label-placement="floating">
+                <ion-select-option value="15">15%</ion-select-option>
+                <ion-select-option value="20">20%</ion-select-option>
+                <ion-select-option value="25">25%</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-range labelPlacement="start" label="Introducir propina" [pin]="true" [pinFormatter]="pinFormatter" min="0" max="100"
+                step="5" [(ngModel)]="propinaManual">
+                <ion-label slot="start">0</ion-label>
+                <ion-label slot="end">100</ion-label>
+              </ion-range>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+
+
+        <ion-label>
+          <p></p>
+        </ion-label>
+        <ion-button (click)="calcular()">Calcular</ion-button>
+        <ion-button color="danger" (click)="resetValues()">Reset</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+
+  </ion-grid>
+</ion-content>

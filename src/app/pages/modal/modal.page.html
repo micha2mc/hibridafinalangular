@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>PropApp</ion-title>
+    <ion-progress-bar type="indeterminate" color="success"></ion-progress-bar>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <ion-grid>
+    <ion-card sizeXs="12" sizeSm="6" sizeMd="6" sizeLg="4" sizeXl="4">
+      <ion-item>
+        <ion-label>
+          <h2>{{resultadoTotal}} €/comensal</h2>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-grid>
+
+</ion-content>

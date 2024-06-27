@@ -1,0 +1,7 @@
+{
+  "name": "devdacticwebsite",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
